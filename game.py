@@ -207,7 +207,8 @@ def check_choice(exit_choice):
         print('Please type yes or no')
         while exit_choice != 'yes' and exit_choice != 'no':
             exit_choice = input()
-            return exit_choice
+            print('Please type yes or no')
+        return exit_choice
     elif exit_choice == 'yes':
         return exit_choice
     elif exit_choice == 'no':
