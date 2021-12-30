@@ -42,348 +42,177 @@ class GameBoard():
             return 0
 
     def check_win_condition(self, row, choice, player):
-        if choice == 1:
+        isFull = self.check_full_board()
+        if isFull == True:
+            print("Looks like there's a tie. Would you like to play again? yes/no")
+            exit_choice = input()
+            return check_choice(exit_choice)
+        elif choice == 1:
             if self.nums[row][1] == player and self.nums[row][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row+1][0] == player and self.nums[row+2][0] == player:
                 print(player + "'s win!")
                 print("Would you like to play again? yes/no")
                 exit_choice = input() 
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row+1][1] == player and self.nums[row+2][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice 
+                return check_choice(exit_choice) 
             else:
                 return 1
-        if choice == 2:
+        elif choice == 2:
             if self.nums[row][0] == player and self.nums[row][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row+1][1] == player and self.nums[row+2][1] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             else:
                 return 1  
-        if choice == 3:
+        elif choice == 3:
             if self.nums[row][1] == player and self.nums[row][0] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row+1][2] == player and self.nums[row+2][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row+1][1] == player and self.nums[row+2][0] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             else:
                 return 1
-        if choice == 4:
+        elif choice == 4:
             if self.nums[row-1][0] == player and self.nums[row+1][0] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row][1] == player and self.nums[row][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             else:
                 return 1
-        if choice == 5:
+        elif choice == 5:
             if self.nums[row-1][1] == player and self.nums[row+1][1] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row][0] == player and self.nums[row][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row+1][0] == player and self.nums[row-1][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row-1][0] == player and self.nums[row+1][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             else:
                 return 1
-        if choice == 6:
+        elif choice == 6:
             if self.nums[row-1][2] == player and self.nums[row+1][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row][0] == player and self.nums[row][1] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             else:
                 return 1
-        if choice == 7:
+        elif choice == 7:
             if self.nums[row-1][0] == player and self.nums[row-2][0] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row-1][1] == player and self.nums[row-2][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row][1] == player and self.nums[row][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             else:
                 return 1
-        if choice == 8:
+        elif choice == 8:
             if self.nums[row-1][1] == player and self.nums[row-2][1] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row][0] == player and self.nums[row][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             else:
                 return 1
-        if choice == 9:
+        elif choice == 9:
             if self.nums[row-1][2] == player and self.nums[row-2][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row][1] == player and self.nums[row][0] == player:
                 print(player + "'s win!")
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             elif self.nums[row-1][1] == player and self.nums[row-2][0] == player:
                 print(player + "'s win!")
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
-                exit_choice = input()
-                if exit_choice != 'yes' and exit_choice != 'no':
-                    print('Please type yes or no')
-                    while exit_choice != 'yes' and exit_choice != 'no':
-                        exit_choice = input()
-                        return exit_choice
-                elif exit_choice == 'yes':
-                    return exit_choice
-                elif exit_choice == 'no':
-                    return exit_choice
+                return check_choice(exit_choice)
             else:
                 return 1
+
+    def check_full_board(self):
+        if len(self.previousChoices) == 9:
+            result = True
+        else:
+            result = False
+        return result
  
+def check_choice(exit_choice):
+    if exit_choice != 'yes' and exit_choice != 'no':
+        print('Please type yes or no')
+        while exit_choice != 'yes' and exit_choice != 'no':
+            exit_choice = input()
+            return exit_choice
+    elif exit_choice == 'yes':
+        return exit_choice
+    elif exit_choice == 'no':
+        return exit_choice
+
 def play_game():
 
     game = GameBoard()
