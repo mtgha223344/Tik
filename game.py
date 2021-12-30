@@ -1,5 +1,7 @@
 import sys
 
+# A little game I put together in my free time to practice python
+
 class GameBoard():
     
     nums = []
