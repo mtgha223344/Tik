@@ -1,5 +1,7 @@
 import sys
 
+# A simple tic tac toe game. Made on an evening with nothing to do to practice python
+
 class GameBoard():
     
     nums = [[1,2,3],[4,5,6],[7,8,9]]
@@ -88,11 +90,38 @@ class GameBoard():
                 print(player + "'s win!") 
                 sys.exit(0)
         if choice == 6:
-            if self.nums[row-1][1] == player and self.nums[row+1][1] == player:
+            if self.nums[row-1][2] == player and self.nums[row+1][2] == player:
+                print(player + "'s win!") 
+                sys.exit(0)
+            elif self.nums[row][0] == player and self.nums[row][1] == player:
+                print(player + "'s win!") 
+                sys.exit(0)
+        if choice == 7:
+            if self.nums[row-1][0] == player and self.nums[row+2][0] == player:
+                print(player + "'s win!") 
+                sys.exit(0)
+            elif self.nums[row-1][1] == player and self.nums[row-2][2] == player:
+                print(player + "'s win!") 
+                sys.exit(0)
+            elif self.nums[row][1] == player and self.nums[row][2] == player:
+                print(player + "'s win!") 
+                sys.exit(0)
+        if choice == 8:
+            if self.nums[row-1][1] == player and self.nums[row-2][1] == player:
                 print(player + "'s win!") 
                 sys.exit(0)
             elif self.nums[row][0] == player and self.nums[row][2] == player:
                 print(player + "'s win!") 
+                sys.exit(0)
+        if choice == 9:
+            if self.nums[row-1][2] == player and self.nums[row-2][2] == player:
+                print(player + "'s win!") 
+                sys.exit(0)
+            elif self.nums[row][1] == player and self.nums[row][0] == player:
+                print(player + "'s win!")
+                sys.exit(0)
+            elif self.nums[row-1][1] == player and self.nums[row-2][0] == player:
+                print(player + "'s win!")
                 sys.exit(0)
  
 if __name__ == '__main__':     
