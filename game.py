@@ -48,9 +48,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -60,9 +61,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input() 
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -72,9 +74,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -87,9 +90,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -98,10 +102,12 @@ class GameBoard():
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
+                exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -114,9 +120,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -126,9 +133,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -138,9 +146,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -153,9 +162,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -165,9 +175,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -180,9 +191,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -192,9 +204,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -204,9 +217,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -216,9 +230,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -231,9 +246,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -243,9 +259,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -258,9 +275,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -270,9 +288,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -280,15 +299,16 @@ class GameBoard():
             elif self.nums[row][1] == player and self.nums[row][2] == player:
                 print(player + "'s win!") 
                 print("Would you like to play again? yes/no")
-                choice = input()
-                if choice != 'yes' or choice != 'no':
-                    while choice != 'yes' or choice != 'no':
-                        print('Please type yes or no')
-                        choice = input
-                elif choice == 'yes':
-                    return choice
-                elif choice == 'no':
-                    return choice
+                exit_choice = input()
+                if exit_choice != 'yes' and exit_choice != 'no':
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
+                elif exit_choice == 'yes':
+                    return exit_choice
+                elif exit_choice == 'no':
+                    return exit_choice
             else:
                 return 1
         if choice == 8:
@@ -297,9 +317,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -309,9 +330,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -324,9 +346,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -336,9 +359,10 @@ class GameBoard():
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -347,10 +371,12 @@ class GameBoard():
                 print(player + "'s win!")
                 print("Would you like to play again? yes/no")
                 exit_choice = input()
+                exit_choice = input()
                 if exit_choice != 'yes' and exit_choice != 'no':
-                    while exit_choice != 'yes' or exit_choice != 'no':
-                        print('Please type yes or no')
-                        exit_choice = input
+                    print('Please type yes or no')
+                    while exit_choice != 'yes' and exit_choice != 'no':
+                        exit_choice = input()
+                        return exit_choice
                 elif exit_choice == 'yes':
                     return exit_choice
                 elif exit_choice == 'no':
@@ -398,7 +424,7 @@ if __name__ == '__main__':
     result = play_game()
     if result == 1:
         while result != 0:
-            print("resetting")
+            print("=========== Resetting the game for you ===========")
             result = play_game()
     else: 
         print('Thanks for playing, bye')
